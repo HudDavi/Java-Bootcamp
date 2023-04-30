@@ -1,11 +1,13 @@
-package bootcamp.curso;
+package main.bootcamp.conteudo;
 
-public class Curso{
+public abstract class Conteudo{
     private String titulo;
     private String descricao;
-    private int carga;
+    protected int xp = 10;
 
-    public String getTitulo() {
+    public abstract int conteudo();
+
+    public String getTitulo(){
         return titulo;
     }
 
@@ -21,11 +23,12 @@ public class Curso{
         this.descricao = descricao;
     }
 
-    public int getCarga() {
-        return carga;
+    public int getXp() {
+        return xp;
     }
 
-    public void setCarga(int carga) {
-        this.carga = carga;
+    public void setXp(int xp) {
+        this.xp = xp;
     }
+
 }
